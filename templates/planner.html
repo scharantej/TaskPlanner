@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Planner</title>
+</head>
+<body>
+<h1>Task Planner</h1>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Time Slot</th>
+</tr>
+</thead>
+<tbody>
+{% for task, time_slot in zip(tasks, time_slots) %}
+<tr>
+<td>{{ task }}</td>
+<td>{{ time_slot }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</body>
+</html>
+
